@@ -1,0 +1,423 @@
+/* MatheComics — estilos globales + Hero
+   Paleta y tipografía según brandbook: uploads/mathecomics-brandbook.md */
+
+:root {
+  --red: #E31E24;
+  --navy: #0B1F3B;
+  --yellow: #FFD400;
+  --sky: #29ABE2;
+  --white: #FFFFFF;
+  --black: #111111;
+
+  --font-display: 'Anton', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background: #EDEDED;
+  font-family: var(--font-body);
+  color: var(--navy);
+}
+
+a { color: var(--navy); }
+a:hover { color: var(--red); }
+
+img { max-width: 100%; display: block; }
+
+.btn {
+  display: inline-block;
+  font-weight: 800;
+  text-decoration: none;
+  border: 2px solid var(--navy);
+  background: var(--yellow);
+  color: var(--navy);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--red);
+  font-family: var(--font-body);
+}
+
+.hero__media {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(11, 31, 59, .15) 0%, rgba(227, 30, 36, .35) 70%, var(--red) 100%);
+}
+
+.hero__halftone {
+  display: none;
+}
+
+.hero__topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 2;
+}
+
+.hero__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero__logo {
+  width: 34px;
+  height: 34px;
+  background: var(--red);
+  border: 2px solid var(--white);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero__logo span {
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: .02em;
+}
+
+.hero__brand-tag {
+  display: none;
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  opacity: .85;
+}
+
+.hero__topbar .btn {
+  font-size: 11px;
+  padding: 8px 14px;
+  border-radius: 7px;
+  box-shadow: none;
+}
+
+.hero__content-outer {
+  position: relative;
+}
+
+.hero__content {
+  position: relative;
+  background: var(--red);
+  background-image: radial-gradient(rgba(255, 255, 255, .14) 1.4px, transparent 1.4px);
+  background-size: 12px 12px;
+  padding: 26px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.hero__pill {
+  align-self: center;
+  background: var(--yellow);
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .06em;
+  padding: 7px 16px;
+  border-radius: 6px;
+  transform: rotate(-2deg);
+  box-shadow: 2px 2px 0 rgba(11, 31, 59, .5);
+}
+
+.hero__title {
+  margin: 0;
+  font-family: var(--font-display);
+  color: var(--white);
+  font-size: 38px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-shadow:
+    -2px -2px 0 var(--navy),
+     2px -2px 0 var(--navy),
+    -2px  2px 0 var(--navy),
+     2px  2px 0 var(--navy),
+     4px  4px 0 rgba(0, 0, 0, .3);
+}
+
+.hero__title--long { display: none; }
+.hero__title--short { display: block; }
+
+.hero__subtitle {
+  margin: 0;
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.hero__ctas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.hero__cta-primary {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 3px solid var(--navy);
+  box-shadow: 4px 4px 0 var(--navy);
+  text-align: center;
+}
+
+.hero__cta-secondary {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hero__badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  margin-top: 14px;
+}
+
+.hero__badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(11, 31, 59, .55);
+  border: 1.5px solid rgba(255, 255, 255, .35);
+  border-radius: 10px;
+  padding: 9px 10px;
+}
+
+.hero__badge-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero__badge-icon svg { width: 13px; height: 13px; }
+
+.hero__badge-label {
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: left;
+}
+
+/* ---------- Desktop ---------- */
+
+@media (min-width: 860px) {
+  .hero {
+    height: 820px;
+  }
+
+  .hero__media {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+  }
+
+  .hero__scrim {
+    background: linear-gradient(100deg,
+      rgba(11, 31, 59, .88) 0%,
+      rgba(227, 30, 36, .82) 32%,
+      rgba(227, 30, 36, .45) 58%,
+      rgba(227, 30, 36, .15) 78%,
+      rgba(227, 30, 36, 0) 100%);
+  }
+
+  .hero__halftone {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, .16) 1.6px, transparent 1.6px);
+    background-size: 14px 14px;
+    mix-blend-mode: overlay;
+    opacity: .5;
+  }
+
+  .hero__topbar {
+    height: 76px;
+    padding: 0 40px;
+  }
+
+  .hero__logo {
+    width: 46px;
+    height: 46px;
+  }
+
+  .hero__logo span { font-size: 13px; }
+
+  .hero__brand-tag { display: inline; }
+
+  .hero__topbar .btn {
+    font-size: 14px;
+    padding: 11px 22px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0 rgba(11, 31, 59, .6);
+  }
+
+  .hero__content-outer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 40px;
+  }
+
+  .hero__content {
+    width: 640px;
+    max-width: min(640px, 88vw);
+    background: none;
+    background-image: none;
+    padding: 0;
+    align-items: flex-start;
+    text-align: left;
+    gap: 22px;
+  }
+
+  .hero__pill { align-self: flex-start; }
+
+  .hero__title--long { display: block; }
+  .hero__title--short { display: none; }
+
+  .hero__title {
+    font-size: 76px;
+    line-height: .98;
+    letter-spacing: .01em;
+    text-shadow:
+      -3px -3px 0 var(--navy),
+       3px -3px 0 var(--navy),
+      -3px  3px 0 var(--navy),
+       3px  3px 0 var(--navy),
+       7px  7px 0 rgba(0, 0, 0, .3);
+  }
+
+  .hero__subtitle {
+    font-size: 22px;
+    max-width: 560px;
+  }
+
+  .hero__ctas {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    gap: 24px;
+    margin-top: 6px;
+  }
+
+  .hero__cta-primary {
+    width: auto;
+    font-size: 19px;
+    padding: 18px 34px;
+    box-shadow: 5px 5px 0 var(--navy);
+  }
+
+  .hero__cta-secondary { font-size: 16px; }
+
+  .hero__badges {
+    display: flex;
+    grid-template-columns: none;
+    gap: 14px;
+    width: auto;
+    margin-top: 18px;
+  }
+
+  .hero__badge { padding: 10px 14px; }
+
+  .hero__badge-icon { width: 30px; height: 30px; }
+  .hero__badge-icon svg { width: 15px; height: 15px; }
+
+  .hero__badge-label { font-size: 13px; }
+}
+
+/* ---------- Galería (fotos sobrantes, decorativa hasta que existan secciones propias) ---------- */
+
+.gallery {
+  padding: 48px 24px 56px;
+  background: #EDEDED;
+  text-align: center;
+}
+
+.gallery__title {
+  margin: 0 0 24px;
+  font-family: var(--font-display);
+  color: var(--navy);
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+
+.gallery__strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery__photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 4px solid var(--navy);
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 var(--red);
+  background: var(--white);
+}
+
+.gallery__photo:nth-child(odd)  { transform: rotate(-2.5deg); }
+.gallery__photo:nth-child(even) { transform: rotate(2deg); }
+
+@media (min-width: 860px) {
+  .gallery__photo { width: 200px; height: 200px; }
+}

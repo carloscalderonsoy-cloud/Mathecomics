@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#EDEDED;}
+  @keyframes heroFade{
+    0%{opacity:0}
+    1%{opacity:1}
+    15%{opacity:1}
+    17%{opacity:0}
+    100%{opacity:0}
+  }
+  a{color:#0B1F3B;}
+  a:hover{color:#E31E24;}
+</style>
+</helmet>
+
+<div style="display:flex;flex-direction:column;align-items:center;gap:56px;padding:56px 24px;font-family:'Poppins',sans-serif;">
+
+  <div style="width:1440px;max-width:100%;">
+    <div style="font-size:13px;color:#8A8A8A;font-weight:600;margin-bottom:10px;letter-spacing:.04em;">DESKTOP — 1440px</div>
+    <div data-screen-label="Hero Desktop" style="position:relative;width:1440px;height:820px;overflow:hidden;background:#E31E24;box-shadow:0 20px 50px rgba(0,0,0,.25);">
+
+      <sc-for list="{{images}}" as="pic" hint-placeholder-count="6">
+        <img src="{{pic.src}}" alt="" style="{{pic.style}}"/>
+      </sc-for>
+
+      <div style="position:absolute;inset:0;background:linear-gradient(100deg, rgba(11,31,59,.88) 0%, rgba(227,30,36,.82) 32%, rgba(227,30,36,.45) 58%, rgba(227,30,36,.15) 78%, rgba(227,30,36,0) 100%);"></div>
+      <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.16) 1.6px, transparent 1.6px);background-size:14px 14px;mix-blend-mode:overlay;opacity:.5;"></div>
+
+      <div style="position:absolute;top:0;left:0;right:0;height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:46px;height:46px;background:#E31E24;border:2px solid #fff;clip-path:polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0% 50%);display:flex;align-items:center;justify-content:center;">
+            <span style="color:#fff;font-family:'Anton',sans-serif;font-size:13px;letter-spacing:.02em;">MATHE</span>
+          </div>
+          <span style="color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;opacity:.85;">LEARN + PLAY</span>
+        </div>
+        <a href="#" style="background:#FFD400;color:#0B1F3B;font-weight:800;font-size:14px;padding:11px 22px;border-radius:8px;border:2px solid #0B1F3B;text-decoration:none;box-shadow:3px 3px 0 rgba(11,31,59,.6);">INSCRÍBETE</a>
+      </div>
+
+      <div style="position:relative;height:100%;display:flex;align-items:center;padding:0 0 0 40px;">
+        <div style="width:640px;display:flex;flex-direction:column;gap:22px;">
+
+          <span style="align-self:flex-start;background:#FFD400;color:#0B1F3B;font-weight:800;font-size:14px;letter-spacing:.06em;padding:8px 18px;border-radius:6px;transform:rotate(-2deg);box-shadow:3px 3px 0 rgba(11,31,59,.5);">NUEVO CURSO</span>
+
+          <h1 style="margin:0;font-family:'Anton',sans-serif;color:#fff;font-size:76px;line-height:0.98;text-transform:uppercase;letter-spacing:.01em;text-shadow:-3px -3px 0 #0B1F3B,3px -3px 0 #0B1F3B,-3px 3px 0 #0B1F3B,3px 3px 0 #0B1F3B,7px 7px 0 rgba(0,0,0,.3);">Aprende matemáticas como si fuera un cómic</h1>
+
+          <p style="margin:0;color:#fff;font-size:22px;font-weight:600;line-height:1.4;max-width:560px;">Metodología de neuroeducación con cómics, para primaria, secundaria y prepa. Presencial o en línea, tú eliges.</p>
+
+          <div style="display:flex;align-items:center;gap:24px;margin-top:6px;">
+            <a href="#" style="background:#FFD400;color:#0B1F3B;font-weight:800;font-size:19px;padding:18px 34px;border-radius:12px;border:3px solid #0B1F3B;text-decoration:none;box-shadow:5px 5px 0 #0B1F3B;">Inscríbete a Start Smart</a>
+            <a href="#" style="color:#fff;font-weight:700;font-size:16px;text-decoration:underline;text-underline-offset:4px;">Conoce la metodología</a>
+          </div>
+
+          <div style="display:flex;gap:14px;margin-top:18px;">
+            <sc-for list="{{badges}}" as="badge" hint-placeholder-count="4">
+              <div style="display:flex;align-items:center;gap:10px;background:rgba(11,31,59,.55);border:1.5px solid rgba(255,255,255,.35);border-radius:10px;padding:10px 14px;">
+                <div style="width:30px;height:30px;border-radius:50%;background:#0B1F3B;display:flex;align-items:center;justify-content:center;flex-shrink:0;" dangerouslySetInnerHTML="{{badge.iconHtml}}"></div>
+                <span style="color:#fff;font-size:13px;font-weight:700;line-height:1.2;">{{badge.label}}</span>
+              </div>
+            </sc-for>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="width:390px;max-width:100%;">
+    <div style="font-size:13px;color:#8A8A8A;font-weight:600;margin-bottom:10px;letter-spacing:.04em;">MOBILE — 390px</div>
+    <div data-screen-label="Hero Mobile" style="position:relative;width:390px;overflow:hidden;background:#E31E24;box-shadow:0 20px 50px rgba(0,0,0,.25);">
+
+      <div style="position:relative;width:100%;height:300px;overflow:hidden;">
+        <sc-for list="{{images}}" as="pic" hint-placeholder-count="6">
+          <img src="{{pic.src}}" alt="" style="{{pic.style}}"/>
+        </sc-for>
+        <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(11,31,59,.15) 0%, rgba(227,30,36,.35) 70%, #E31E24 100%);"></div>
+
+        <div style="position:absolute;top:0;left:0;right:0;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;">
+          <div style="width:34px;height:34px;background:#E31E24;border:2px solid #fff;clip-path:polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0% 50%);display:flex;align-items:center;justify-content:center;">
+            <span style="color:#fff;font-family:'Anton',sans-serif;font-size:9px;">MATHE</span>
+          </div>
+          <a href="#" style="background:#FFD400;color:#0B1F3B;font-weight:800;font-size:11px;padding:8px 14px;border-radius:7px;border:2px solid #0B1F3B;text-decoration:none;">INSCRÍBETE</a>
+        </div>
+      </div>
+
+      <div style="position:relative;background:#E31E24;background-image:radial-gradient(rgba(255,255,255,.14) 1.4px, transparent 1.4px);background-size:12px 12px;padding:26px 20px 32px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;">
+
+        <span style="background:#FFD400;color:#0B1F3B;font-weight:800;font-size:12px;letter-spacing:.06em;padding:7px 16px;border-radius:6px;transform:rotate(-2deg);box-shadow:2px 2px 0 rgba(11,31,59,.5);">NUEVO CURSO</span>
+
+        <h1 style="margin:0;font-family:'Anton',sans-serif;color:#fff;font-size:38px;line-height:1;text-transform:uppercase;text-shadow:-2px -2px 0 #0B1F3B,2px -2px 0 #0B1F3B,-2px 2px 0 #0B1F3B,2px 2px 0 #0B1F3B,4px 4px 0 rgba(0,0,0,.3);">Aprende matemáticas como un cómic</h1>
+
+        <p style="margin:0;color:#fff;font-size:15px;font-weight:600;line-height:1.4;">Neuroeducación con cómics, para primaria, secundaria y prepa. Presencial o en línea, tú eliges.</p>
+
+        <a href="#" style="width:100%;box-sizing:border-box;background:#FFD400;color:#0B1F3B;font-weight:800;font-size:16px;padding:16px;border-radius:12px;border:3px solid #0B1F3B;text-decoration:none;box-shadow:4px 4px 0 #0B1F3B;margin-top:4px;">Inscríbete a Start Smart</a>
+        <a href="#" style="color:#fff;font-weight:700;font-size:13px;text-decoration:underline;text-underline-offset:3px;">Conoce la metodología</a>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;margin-top:14px;">
+          <sc-for list="{{badges}}" as="badge" hint-placeholder-count="4">
+            <div style="display:flex;align-items:center;gap:8px;background:rgba(11,31,59,.55);border:1.5px solid rgba(255,255,255,.35);border-radius:10px;padding:9px 10px;">
+              <div style="width:24px;height:24px;border-radius:50%;background:#0B1F3B;display:flex;align-items:center;justify-content:center;flex-shrink:0;" dangerouslySetInnerHTML="{{badge.iconHtml}}"></div>
+              <span style="color:#fff;font-size:11px;font-weight:700;line-height:1.15;text-align:left;">{{badge.label}}</span>
+            </div>
+          </sc-for>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;secondsPerImage&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:2,&quot;min&quot;:1,&quot;max&quot;:4,&quot;step&quot;:0.5,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Carrusel&quot;},&quot;showBadges&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contenido&quot;}}">
+const ICONS = {
+  clock: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3.2 2"/></svg>',
+  modal: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><circle cx="8.5" cy="8" r="3"/><path d="M2.5 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="8.5" r="2.4"/><path d="M15.5 14.6c2.6.4 4.5 2.2 4.5 5"/></svg>',
+  check: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M4 12.5l5 5L20 6"/></svg>',
+  trend: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 6h6v6"/></svg>'
+};
+
+class Component extends DCLogic {
+  renderVals() {
+    const secondsPerImage = this.props.secondsPerImage ?? 2;
+    const files = [
+      'hf_20260806_233524_1c5ba227-e8f3-42f9-bdb9-7a5680d2e3fd.png',
+      'hf_20260806_233524_80963a29-84f5-46c9-86ee-1d69ba3148d3.png',
+      'hf_20260806_233524_6322d15a-ef1f-4d5c-ab8b-f5eb12f812a7.png',
+      'hf_20260806_233524_5d8a356a-eb3d-4996-a175-7ab5973a80b8.png',
+      'hf_20260806_233524_c390e3e2-610a-4575-8527-ad820d09f9d0.png',
+      'hf_20260806_233524_95037178-7dac-4bb9-884f-e72447ffcf1f.png'
+    ];
+    const duration = files.length * secondsPerImage;
+    const images = files.map((f, i) => ({
+      src: 'uploads/' + f,
+      style: {
+        position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
+        animationName: 'heroFade', animationDuration: duration + 's', animationTimingFunction: 'linear',
+        animationIterationCount: 'infinite', animationFillMode: 'backwards',
+        animationDelay: (i * secondsPerImage) + 's'
+      }
+    }));
+
+    const badges = this.props.showBadges === false ? [] : [
+      { label: '16 horas', iconHtml: { __html: ICONS.clock } },
+      { label: '2 modalidades', iconHtml: { __html: ICONS.modal } },
+      { label: 'Diagnóstico inicial y final', iconHtml: { __html: ICONS.check } },
+      { label: 'Horario flexible', iconHtml: { __html: ICONS.trend } }
+    ];
+
+    return { images, badges };
+  }
+}
+
+</script>
+</body>
+</html>
