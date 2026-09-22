@@ -463,6 +463,215 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
+/* ---------- Programas / Servicios ---------- */
+
+.services {
+  padding: 56px 24px;
+  background: #EDEDED;
+  text-align: center;
+}
+
+.services__intro {
+  max-width: 640px;
+  margin: 0 auto 36px;
+}
+
+.services__pill {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .06em;
+  padding: 7px 16px;
+  border-radius: 6px;
+  transform: rotate(-2deg);
+  box-shadow: 2px 2px 0 rgba(11, 31, 59, .35);
+}
+
+.services__heading {
+  font-family: var(--font-display);
+  color: var(--navy);
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1.1;
+  margin: 16px 0 12px;
+}
+
+.services__subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #3a3a3a;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services__card {
+  background: var(--white);
+  border: 3px solid var(--navy);
+  border-radius: 16px;
+  padding: 28px 22px;
+  text-align: left;
+  box-shadow: 6px 6px 0 var(--red);
+  display: flex;
+  flex-direction: column;
+}
+
+.services__card-pill {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--yellow);
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1.5px solid var(--navy);
+  margin-bottom: 14px;
+}
+
+.services__card-title {
+  font-family: var(--font-display);
+  color: var(--navy);
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 1.1;
+  margin: 0 0 10px;
+}
+
+.services__card-copy {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.45;
+  margin: 0 0 16px;
+}
+
+.services__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.services__features li {
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.35;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.services__features li::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  background: var(--red);
+  border-radius: 50%;
+  border: 2px solid var(--navy);
+}
+
+.services__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.services__meta span {
+  background: #EDEDED;
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1.5px solid var(--navy);
+}
+
+.services__price {
+  background: rgba(11, 31, 59, .06);
+  border: 1.5px dashed var(--navy);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.services__price-label {
+  display: block;
+  font-weight: 800;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.services__price-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.services__price-chips span {
+  background: var(--white);
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 5px 9px;
+  border-radius: 8px;
+  border: 1.5px solid var(--navy);
+}
+
+.services__price-note {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+}
+
+.services__price--cta {
+  display: flex;
+  align-items: center;
+}
+
+.services__cta {
+  align-self: flex-start;
+  font-size: 14px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  border: 2.5px solid var(--navy);
+  box-shadow: 3px 3px 0 var(--navy);
+  margin-top: auto;
+}
+
+@media (min-width: 640px) {
+  .services__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 860px) {
+  .services__heading { font-size: 44px; }
+  .services__subtitle { font-size: 17px; }
+  .services__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
 /* ---------- Programa Start Smart ---------- */
 
 .program {
@@ -579,6 +788,50 @@ img { max-width: 100%; display: block; }
   background: var(--yellow);
   border-radius: 50%;
   border: 2px solid var(--navy);
+}
+
+.program__price {
+  background: rgba(11, 31, 59, .3);
+  border: 1.5px solid rgba(255, 255, 255, .5);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 0 auto 24px;
+  max-width: 380px;
+  text-align: left;
+}
+
+.program__price-label {
+  display: block;
+  color: var(--yellow);
+  font-weight: 800;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin-bottom: 8px;
+}
+
+.program__price-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.program__price-chips span {
+  background: var(--white);
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 5px 9px;
+  border-radius: 8px;
+}
+
+.program__price-note {
+  display: block;
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 600;
+  opacity: .85;
 }
 
 .program__cta {
