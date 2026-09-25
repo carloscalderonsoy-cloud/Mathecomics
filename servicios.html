@@ -6,7 +6,7 @@
 <title>Programas y servicios — MatheComics</title>
 <meta name="description" content="Start Smart, Smart Track, Preparación para examen de admisión, Energiza tu Cerebro y Mathe-Pack: todos los programas de MatheComics, con precios, duración y fotos reales de sucursal.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -18,31 +18,83 @@
 </nav>
 
 <header class="svc-header">
-  <div class="svc-header__inner">
+  <div class="svc-header__bg" aria-hidden="true"></div>
+  <span class="svc-header__doodle svc-header__doodle--1" aria-hidden="true">f(x)</span>
+  <span class="svc-header__doodle svc-header__doodle--2" aria-hidden="true">△</span>
+  <span class="svc-header__doodle svc-header__doodle--3" aria-hidden="true">x²</span>
+
+  <div class="svc-header__inner reveal reveal--up is-visible">
     <div class="svc-header__copy">
+      <div class="svc-header__brand">
+        <div class="hero__logo"><span>MATHE</span></div>
+        <span class="hero__brand-tag">LEARN + PLAY</span>
+      </div>
       <span class="svc-header__pill">PROGRAMAS Y SERVICIOS</span>
       <h1 class="svc-header__title">Un plan para cada etapa</h1>
       <p class="svc-header__subtitle">Regularización, acompañamiento, preparación para admisión, bienestar cognitivo y material educativo — todo con neuroeducación y cómics.</p>
     </div>
     <img class="svc-header__boris" src="assets/fotos/boris-servicios-header.jpg" alt="Boris, la mascota de MatheComics, mirando al atardecer.">
   </div>
-  <nav class="svc-jump" aria-label="Ir a un programa">
-    <a href="#start-smart">Start Smart</a>
-    <a href="#smart-track">Smart Track</a>
-    <a href="#examen-admision">Examen de Admisión</a>
-    <a href="#energiza">Energiza tu Cerebro</a>
-    <a href="#mathe-pack">Mathe-Pack</a>
+
+  <nav class="svc-jump reveal reveal--up is-visible" aria-label="Ir a un programa">
+    <a href="#start-smart" class="svc-jump__link svc-jump__link--red">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>
+      Start Smart
+    </a>
+    <a href="#smart-track" class="svc-jump__link svc-jump__link--blue">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><circle cx="8.5" cy="8" r="3"/><path d="M2.5 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="8.5" r="2.4"/><path d="M15.5 14.6c2.6.4 4.5 2.2 4.5 5"/></svg>
+      Smart Track
+    </a>
+    <a href="#examen-admision" class="svc-jump__link svc-jump__link--green">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M4 12.5l5 5L20 6"/></svg>
+      Examen de Admisión
+    </a>
+    <a href="#energiza" class="svc-jump__link svc-jump__link--purple">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M9 3a3 3 0 0 0-3 3 3 3 0 0 0-2 2.8A3 3 0 0 0 3 11a3 3 0 0 0 1.5 2.6A3 3 0 0 0 6 17a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Z"/><path d="M15 3a3 3 0 0 1 3 3 3 3 0 0 1 2 2.8A3 3 0 0 1 21 11a3 3 0 0 1-1.5 2.6A3 3 0 0 1 18 17a3 3 0 0 1-3 3 3 3 0 0 1-3-3V6a3 3 0 0 1 3-3Z"/></svg>
+      Energiza tu Cerebro
+    </a>
+    <a href="#mathe-pack" class="svc-jump__link svc-jump__link--orange">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 1 4 18.5v-13Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 0 2.5-2.5v-13Z"/></svg>
+      Mathe-Pack
+    </a>
   </nav>
-  <p class="svc-header__guide"><strong>¿Cuál te conviene?</strong> Rezago o bases débiles → Start Smart. Va al día pero quiere apoyo constante → Smart Track. Presenta examen de admisión → Preparación para Admisión.</p>
+
+  <p class="svc-header__guide reveal reveal--up is-visible"><strong>¿Cuál te conviene?</strong> Rezago o bases débiles → Start Smart. Va al día pero quiere apoyo constante → Smart Track. Presenta examen de admisión → Preparación para Admisión.</p>
+
+  <div class="svc-header__infobar reveal reveal--up is-visible">
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3.2 2"/></svg> Horarios flexibles</span>
+    <span class="svc-header__infobar-sep"></span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><rect x="4" y="4" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg> Modalidad híbrida</span>
+    <span class="svc-header__infobar-sep"></span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22Z"/><circle cx="12" cy="9.5" r="2.3"/></svg> Plaza El Palomar · Local A1 junto a Soriana</span>
+  </div>
 </header>
 
 <section class="svc svc--red" id="start-smart" aria-label="Start Smart">
   <div class="svc__inner">
-    <div class="svc__media">
-      <img class="svc__photo" src="assets/fotos/servicio-start-smart-1.jpg" alt="Sesión grupal de Start Smart en sucursal MatheComics Palomar, alumnos trabajando con cuadernos en mesa roja.">
-      <img class="svc__photo" src="assets/fotos/servicio-start-smart-2.jpg" alt="Alumno de Start Smart trabajando en su cuaderno durante la sesión.">
+    <div class="svc__media reveal reveal--left">
+      <div class="svc__photos">
+        <div class="svc__media-badge"><div class="hero__logo"><span>MATHE</span></div></div>
+        <img class="svc__photo" src="assets/fotos/servicio-start-smart-1.jpg" alt="Sesión grupal de Start Smart en sucursal MatheComics Palomar, alumnos trabajando con cuadernos en mesa roja.">
+        <img class="svc__photo" src="assets/fotos/servicio-start-smart-2.jpg" alt="Alumno de Start Smart trabajando en su cuaderno durante la sesión.">
+      </div>
+
+      <div class="svc__benefits">
+        <span class="svc__benefits-label">Beneficios</span>
+        <div class="svc__benefits-grid">
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span>Refuerza las bases académicas</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"/></svg></span>Recupera seguridad y confianza</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 1 4 18.5v-13Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 0 2.5-2.5v-13Z"/></svg></span>Avanza a su propio ritmo</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><circle cx="8.5" cy="8" r="3"/><path d="M2.5 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="8.5" r="2.4"/><path d="M15.5 14.6c2.6.4 4.5 2.2 4.5 5"/></svg></span>Seguimiento personalizado</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"/></svg></span>Mejora hábitos de estudio</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.4"/></svg></span>Preparación para el siguiente nivel</div>
+        </div>
+      </div>
+
+      <p class="svc__tagline">No se trata solo de ponerse al corriente, sino de construir mejores bases para avanzar.</p>
     </div>
-    <div class="svc__text">
+
+    <div class="svc__text reveal reveal--right">
       <span class="svc__pill">Regularización académica</span>
       <h2 class="svc__title">Start Smart</h2>
       <p class="svc__lead">Regulariza al alumno y fortalece los conocimientos y habilidades que necesita para alcanzar el nivel académico correspondiente a su grado escolar actual.</p>
@@ -65,9 +117,9 @@
       </ul>
 
       <div class="svc__meta">
-        <span>48 horas</span>
-        <span>2 hrs/semana</span>
-        <span>Presencial, en línea o híbrida</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3.2 2"/></svg>48 horas</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>2 hrs/semana</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg>Presencial, en línea o híbrida</span>
       </div>
 
       <div class="svc__price">
@@ -80,18 +132,40 @@
         <span class="svc__price-note">Cupo mínimo 3 personas</span>
       </div>
 
-      <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Start%20Smart" class="svc__cta" target="_blank" rel="noopener">Solicita informes por WhatsApp</a>
+      <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Start%20Smart" class="svc__cta cta-wa" target="_blank" rel="noopener">
+        <span class="cta-wa__icon"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.77.46 3.45 1.28 4.94L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.14c-.24.68-1.4 1.32-1.93 1.36-.5.05-1.03.24-3.47-.72-2.94-1.16-4.83-4.13-4.98-4.32-.15-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.44.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2.01.89 2.15.07.15.11.32.02.51-.09.2-.14.32-.27.49-.14.17-.29.38-.41.51-.14.14-.28.29-.12.57.15.28.68 1.13 1.47 1.83 1.01.9 1.87 1.18 2.15 1.31.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.28.38-.24.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.66-.17 1.35Z"/></svg></span>
+        <span class="cta-wa__label">Solicita informes por WhatsApp</span>
+        <span class="cta-wa__arrow">→</span>
+      </a>
     </div>
   </div>
 </section>
 
 <section class="svc svc--navy svc--reverse" id="smart-track" aria-label="Smart Track">
   <div class="svc__inner">
-    <div class="svc__media">
-      <img class="svc__photo" src="assets/fotos/servicio-smart-track-1.jpg" alt="Tutora de MatheComics acompañando de forma individual a una alumna con tablet y cuadernos.">
-      <img class="svc__photo" src="assets/fotos/servicio-smart-track-2.jpg" alt="Sesión de acompañamiento uno a uno de Smart Track, tutora revisando ejercicios con la alumna.">
+    <div class="svc__media reveal reveal--right">
+      <div class="svc__photos">
+        <div class="svc__media-badge"><div class="hero__logo"><span>MATHE</span></div></div>
+        <img class="svc__photo" src="assets/fotos/servicio-smart-track-1.jpg" alt="Tutora de MatheComics acompañando de forma individual a una alumna con tablet y cuadernos.">
+        <img class="svc__photo" src="assets/fotos/servicio-smart-track-2.jpg" alt="Sesión de acompañamiento uno a uno de Smart Track, tutora revisando ejercicios con la alumna.">
+      </div>
+
+      <div class="svc__benefits">
+        <span class="svc__benefits-label">Beneficios</span>
+        <div class="svc__benefits-grid">
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M4 12.5l5 5L20 6"/></svg></span>Resuelve dudas a tiempo</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"/></svg></span>Mejora la organización y hábitos de estudio</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span>Refuerza la confianza en clase</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><circle cx="8.5" cy="8" r="3"/><path d="M2.5 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="8.5" r="2.4"/><path d="M15.5 14.6c2.6.4 4.5 2.2 4.5 5"/></svg></span>Acompañamiento constante, no solo en crisis</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 1 4 18.5v-13Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 0 2.5-2.5v-13Z"/></svg></span>Comunicación clara de avances a papás</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.4"/></svg></span>Se adapta a su ritmo escolar</div>
+        </div>
+      </div>
+
+      <p class="svc__tagline">No es solo ayuda con la tarea, es acompañamiento que no lo deja solo en el camino.</p>
     </div>
-    <div class="svc__text">
+
+    <div class="svc__text reveal reveal--left">
       <span class="svc__pill">Acompañamiento académico</span>
       <h2 class="svc__title">Smart Track</h2>
       <p class="svc__lead">Acompaña al alumno durante su ciclo escolar para apoyarlo con las actividades y necesidades académicas que surjan, favoreciendo una mejor organización, comprensión y desempeño escolar.</p>
@@ -113,8 +187,8 @@
       </ul>
 
       <div class="svc__meta">
-        <span>4 u 8 horas</span>
-        <span>1-2 hrs/semana</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3.2 2"/></svg>4 u 8 horas</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>1-2 hrs/semana</span>
       </div>
 
       <div class="svc__price">
@@ -127,18 +201,40 @@
         <span class="svc__price-note">Cupo mínimo 3 personas</span>
       </div>
 
-      <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Smart%20Track" class="svc__cta" target="_blank" rel="noopener">Solicita informes por WhatsApp</a>
+      <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Smart%20Track" class="svc__cta cta-wa" target="_blank" rel="noopener">
+        <span class="cta-wa__icon"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.77.46 3.45 1.28 4.94L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.14c-.24.68-1.4 1.32-1.93 1.36-.5.05-1.03.24-3.47-.72-2.94-1.16-4.83-4.13-4.98-4.32-.15-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.44.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2.01.89 2.15.07.15.11.32.02.51-.09.2-.14.32-.27.49-.14.17-.29.38-.41.51-.14.14-.28.29-.12.57.15.28.68 1.13 1.47 1.83 1.01.9 1.87 1.18 2.15 1.31.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.28.38-.24.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.66-.17 1.35Z"/></svg></span>
+        <span class="cta-wa__label">Solicita informes por WhatsApp</span>
+        <span class="cta-wa__arrow">→</span>
+      </a>
     </div>
   </div>
 </section>
 
 <section class="svc svc--sky" id="examen-admision" aria-label="Preparación para examen de admisión">
   <div class="svc__inner">
-    <div class="svc__media">
-      <img class="svc__photo" src="assets/fotos/servicio-admision-1.jpg" alt="Alumno de secundaria/prepa trabajando en su preparación para examen de admisión con MatheComics.">
-      <img class="svc__photo" src="assets/fotos/servicio-admision-2.jpg" alt="Alumno sosteniendo material de MatheComics frente al mural de la marca en sucursal.">
+    <div class="svc__media reveal reveal--left">
+      <div class="svc__photos">
+        <div class="svc__media-badge"><div class="hero__logo"><span>MATHE</span></div></div>
+        <img class="svc__photo" src="assets/fotos/servicio-admision-1.jpg" alt="Alumno de secundaria/prepa trabajando en su preparación para examen de admisión con MatheComics.">
+        <img class="svc__photo" src="assets/fotos/servicio-admision-2.jpg" alt="Alumno sosteniendo material de MatheComics frente al mural de la marca en sucursal.">
+      </div>
+
+      <div class="svc__benefits">
+        <span class="svc__benefits-label">Beneficios</span>
+        <div class="svc__benefits-grid">
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.4"/></svg></span>Domina los temas clave del examen</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M4 12.5l5 5L20 6"/></svg></span>Practica con simulacros reales</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3.2 2"/></svg></span>Aprende a administrar el tiempo</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"/></svg></span>Reduce el estrés del día del examen</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span>Plan de estudio enfocado en su meta</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><circle cx="8.5" cy="8" r="3"/><path d="M2.5 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="8.5" r="2.4"/><path d="M15.5 14.6c2.6.4 4.5 2.2 4.5 5"/></svg></span>Seguimiento hasta la fecha del examen</div>
+        </div>
+      </div>
+
+      <p class="svc__tagline">Llegar preparado no es suerte, es estrategia y práctica.</p>
     </div>
-    <div class="svc__text">
+
+    <div class="svc__text reveal reveal--right">
       <span class="svc__pill">Admisión a prepa o universidad</span>
       <h2 class="svc__title">Preparación para Examen de Admisión</h2>
       <p class="svc__lead">Prepara al alumno para presentar exámenes de admisión a preparatoria o universidad, fortaleciendo las áreas académicas necesarias y desarrollando estrategias para responder eficazmente el examen. Grupal o personalizada, en línea o presencial.</p>
@@ -154,32 +250,38 @@
       </ul>
 
       <div class="svc__meta">
-        <span>32 horas mín.</span>
-        <span>2-4 hrs/semana</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3.2 2"/></svg>32 horas mín.</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>2-4 hrs/semana</span>
       </div>
 
       <div class="svc__price">
         <span class="svc__price-note">Conoce el precio en tu primera sesión de informes · Cupo mínimo 5 personas</span>
       </div>
 
-      <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20Preparaci%C3%B3n%20para%20Examen%20de%20Admisi%C3%B3n" class="svc__cta" target="_blank" rel="noopener">Solicita informes por WhatsApp</a>
+      <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20Preparaci%C3%B3n%20para%20Examen%20de%20Admisi%C3%B3n" class="svc__cta cta-wa" target="_blank" rel="noopener">
+        <span class="cta-wa__icon"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.77.46 3.45 1.28 4.94L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.14c-.24.68-1.4 1.32-1.93 1.36-.5.05-1.03.24-3.47-.72-2.94-1.16-4.83-4.13-4.98-4.32-.15-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.44.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2.01.89 2.15.07.15.11.32.02.51-.09.2-.14.32-.27.49-.14.17-.29.38-.41.51-.14.14-.28.29-.12.57.15.28.68 1.13 1.47 1.83 1.01.9 1.87 1.18 2.15 1.31.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.28.38-.24.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.66-.17 1.35Z"/></svg></span>
+        <span class="cta-wa__label">Solicita informes por WhatsApp</span>
+        <span class="cta-wa__arrow">→</span>
+      </a>
     </div>
   </div>
 </section>
 
 <section class="svc svc--yellow svc--reverse" id="energiza" aria-label="Energiza tu Cerebro">
   <div class="svc__inner">
-    <div class="svc__media">
-      <div class="svc__photo svc__photo--placeholder" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="15" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 16l5-4 4 3 4-3 5 4"/></svg>
-        <span>Foto próximamente</span>
-      </div>
-      <div class="svc__photo svc__photo--placeholder" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="15" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 16l5-4 4 3 4-3 5 4"/></svg>
-        <span>Foto próximamente</span>
+    <div class="svc__media reveal reveal--right">
+      <div class="svc__photos">
+        <div class="svc__photo svc__photo--placeholder" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="15" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 16l5-4 4 3 4-3 5 4"/></svg>
+          <span>Foto próximamente</span>
+        </div>
+        <div class="svc__photo svc__photo--placeholder" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="15" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 16l5-4 4 3 4-3 5 4"/></svg>
+          <span>Foto próximamente</span>
+        </div>
       </div>
     </div>
-    <div class="svc__text">
+    <div class="svc__text reveal reveal--left">
       <span class="svc__pill">Bienestar cognitivo</span>
       <h2 class="svc__title">Energiza tu Cerebro</h2>
       <p class="svc__lead">Fortalece y mantén activas las funciones cognitivas, favoreciendo la salud mental, la autonomía y el bienestar emocional a lo largo del tiempo.</p>
@@ -193,27 +295,62 @@
       </ul>
 
       <div class="svc__meta">
-        <span>1 mes por libro</span>
-        <span>mín. 3 meses recomendado</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3.2 2"/></svg>1 mes por libro</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>mín. 3 meses recomendado</span>
       </div>
 
       <div class="svc__price">
         <span class="svc__price-note">Conoce el precio en tu primera sesión de informes · Cupo mínimo 10 personas</span>
       </div>
 
-      <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Energiza%20tu%20Cerebro" class="svc__cta" target="_blank" rel="noopener">Solicita informes por WhatsApp</a>
+      <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Energiza%20tu%20Cerebro" class="svc__cta cta-wa" target="_blank" rel="noopener">
+        <span class="cta-wa__icon"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.77.46 3.45 1.28 4.94L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.14c-.24.68-1.4 1.32-1.93 1.36-.5.05-1.03.24-3.47-.72-2.94-1.16-4.83-4.13-4.98-4.32-.15-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.44.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2.01.89 2.15.07.15.11.32.02.51-.09.2-.14.32-.27.49-.14.17-.29.38-.41.51-.14.14-.28.29-.12.57.15.28.68 1.13 1.47 1.83 1.01.9 1.87 1.18 2.15 1.31.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.28.38-.24.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.66-.17 1.35Z"/></svg></span>
+        <span class="cta-wa__label">Solicita informes por WhatsApp</span>
+        <span class="cta-wa__arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="svc__addon reveal reveal--up">
+    <div class="svc__addon-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2M10 21v-4h4v4"/></svg>
+    </div>
+    <div class="svc__addon-text">
+      <h3 class="svc__addon-title">Capacitaciones personalizadas para empresas</h3>
+      <p class="svc__addon-copy"><strong>Modalidad Incompany.</strong> Programas de estimulación cognitiva y bienestar para equipos de trabajo, a la medida de tus necesidades. Mejora el bienestar y el rendimiento de tu equipo.</p>
+      <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20capacitaciones%20Incompany%20para%20empresas" class="svc__addon-cta cta-wa" target="_blank" rel="noopener">
+        <span class="cta-wa__icon"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.77.46 3.45 1.28 4.94L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.14c-.24.68-1.4 1.32-1.93 1.36-.5.05-1.03.24-3.47-.72-2.94-1.16-4.83-4.13-4.98-4.32-.15-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.44.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2.01.89 2.15.07.15.11.32.02.51-.09.2-.14.32-.27.49-.14.17-.29.38-.41.51-.14.14-.28.29-.12.57.15.28.68 1.13 1.47 1.83 1.01.9 1.87 1.18 2.15 1.31.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.28.38-.24.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.66-.17 1.35Z"/></svg></span>
+        <span class="cta-wa__label">Solicita información</span>
+        <span class="cta-wa__arrow">→</span>
+      </a>
     </div>
   </div>
 </section>
 
 <section class="svc svc--light" id="mathe-pack" aria-label="Mathe-Pack">
   <div class="svc__inner">
-    <div class="svc__media">
-      <img class="svc__photo" src="assets/fotos/servicio-mathepack-comics.jpg" alt="Los 4 cómics de Las Aventuras de Boris El Perro-Lobo que incluye el Mathe-Pack.">
-      <img class="svc__photo" src="assets/fotos/servicio-mathepack-loteria.jpg" alt="Tablero y cartas de la Lotería MatheComics de multiplicaciones, parte del Mathe-Pack.">
-      <img class="svc__photo" src="assets/fotos/servicio-mathepack-tarjetas.jpg" alt="Tarjetas positivas Yo Soy del Mathe-Pack, con frases para mejorar la autoestima.">
+    <div class="svc__media reveal reveal--left">
+      <div class="svc__photos">
+        <div class="svc__media-badge"><div class="hero__logo"><span>MATHE</span></div></div>
+        <img class="svc__photo" src="assets/fotos/servicio-mathepack-comics.jpg" alt="Los 4 cómics de Las Aventuras de Boris El Perro-Lobo que incluye el Mathe-Pack.">
+        <img class="svc__photo" src="assets/fotos/servicio-mathepack-loteria.jpg" alt="Tablero y cartas de la Lotería MatheComics de multiplicaciones, parte del Mathe-Pack.">
+        <img class="svc__photo" src="assets/fotos/servicio-mathepack-tarjetas.jpg" alt="Tarjetas positivas Yo Soy del Mathe-Pack, con frases para mejorar la autoestima.">
+      </div>
+
+      <div class="svc__benefits">
+        <span class="svc__benefits-label">Beneficios</span>
+        <div class="svc__benefits-grid">
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 1 4 18.5v-13Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 0 2.5-2.5v-13Z"/></svg></span>Practica matemáticas sin sentir que "estudia"</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"/></svg></span>Refuerza comprensión lectora</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M4 12.5l5 5L20 6"/></svg></span>Fortalece autoestima con las tarjetas positivas</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><circle cx="8.5" cy="8" r="3"/><path d="M2.5 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="8.5" r="2.4"/><path d="M15.5 14.6c2.6.4 4.5 2.2 4.5 5"/></svg></span>Ideal para jugar en familia</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.4"/></svg></span>Desarrolla pensamiento lógico</div>
+          <div class="svc__benefit"><span class="svc__benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span>Ejercicios y procedimientos dentro de la historia</div>
+        </div>
+      </div>
     </div>
-    <div class="svc__text">
+
+    <div class="svc__text reveal reveal--right">
       <span class="svc__pill">Material educativo</span>
       <h2 class="svc__title">Mathe-Pack</h2>
       <p class="svc__lead">4 cómics + lotería + tarjetas positivas. Un producto STEAM que ofrece práctica matemática, comprensión lectora, procedimientos para resolución de problemas y uso de tecnología dentro de la historieta, además de habilidades socio-afectivas y manejo de emociones.</p>
@@ -226,7 +363,7 @@
       </ul>
 
       <div class="svc__meta">
-        <span>Disponible en sucursal</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>Disponible en sucursal</span>
         <span>o visita a colegios</span>
       </div>
 
@@ -234,7 +371,11 @@
         <span class="svc__price-note">Conoce el precio en tu primera sesión de informes</span>
       </div>
 
-      <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Mathe-Pack" class="svc__cta" target="_blank" rel="noopener">Solicita informes por WhatsApp</a>
+      <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Mathe-Pack" class="svc__cta cta-wa" target="_blank" rel="noopener">
+        <span class="cta-wa__icon"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.77.46 3.45 1.28 4.94L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.14c-.24.68-1.4 1.32-1.93 1.36-.5.05-1.03.24-3.47-.72-2.94-1.16-4.83-4.13-4.98-4.32-.15-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.44.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2.01.89 2.15.07.15.11.32.02.51-.09.2-.14.32-.27.49-.14.17-.29.38-.41.51-.14.14-.28.29-.12.57.15.28.68 1.13 1.47 1.83 1.01.9 1.87 1.18 2.15 1.31.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.28.38-.24.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.66-.17 1.35Z"/></svg></span>
+        <span class="cta-wa__label">Solicita informes por WhatsApp</span>
+        <span class="cta-wa__arrow">→</span>
+      </a>
     </div>
   </div>
 </section>
@@ -242,7 +383,11 @@
 <section class="closer" id="contacto" aria-label="Contacto">
   <div class="closer__halftone"></div>
   <h2 class="closer__title">¿Qué esperas para inscribirte?</h2>
-  <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20MatheComics" class="btn closer__cta" target="_blank" rel="noopener">Solicita informes por WhatsApp</a>
+  <a href="https://wa.me/523331474905?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20MatheComics" class="btn closer__cta cta-wa" target="_blank" rel="noopener">
+    <span class="cta-wa__icon"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.77.46 3.45 1.28 4.94L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.14c-.24.68-1.4 1.32-1.93 1.36-.5.05-1.03.24-3.47-.72-2.94-1.16-4.83-4.13-4.98-4.32-.15-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.44.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2.01.89 2.15.07.15.11.32.02.51-.09.2-.14.32-.27.49-.14.17-.29.38-.41.51-.14.14-.28.29-.12.57.15.28.68 1.13 1.47 1.83 1.01.9 1.87 1.18 2.15 1.31.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.28.38-.24.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.66-.17 1.35Z"/></svg></span>
+    <span class="cta-wa__label">Solicita informes por WhatsApp</span>
+    <span class="cta-wa__arrow">→</span>
+  </a>
   <div class="closer__social">
     <a href="https://instagram.com/mathe_comics" target="_blank" rel="noopener">@mathe_comics</a>
     <a href="tel:+523331474905">33-31-47-49-05</a>
