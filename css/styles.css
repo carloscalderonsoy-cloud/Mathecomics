@@ -1326,6 +1326,7 @@ img { max-width: 100%; display: block; }
 .svc-jump__link--green  { background: rgba(22, 163, 74, .6); }
 .svc-jump__link--purple { background: rgba(124, 58, 237, .6); }
 .svc-jump__link--orange { background: rgba(249, 115, 22, .6); }
+.svc-jump__link--navy   { background: rgba(11, 31, 59, .65); }
 
 .svc-header__guide {
   position: relative;
@@ -1537,14 +1538,6 @@ img { max-width: 100%; display: block; }
 
 .svc__photos { position: relative; }
 
-.svc__media-badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 2;
-  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, .35));
-}
-
 .svc__benefits {
   margin-top: 4px;
   background: var(--svc-chip-bg);
@@ -1654,29 +1647,48 @@ img { max-width: 100%; display: block; }
 .svc__tagline::before { top: -14px; left: -14px; }
 .svc__tagline::after  { bottom: -14px; right: -14px; animation-delay: .4s; }
 
-.svc__addon {
+/* ---------- Capacitaciones para empresas: segmento propio, banner compacto ---------- */
+
+.svc-empresas {
   background: var(--navy);
-  padding: 32px 20px;
+  padding: 36px 20px;
+  text-align: center;
+}
+
+.svc-empresas__pill {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: .06em;
+  padding: 6px 14px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  transform: rotate(-2deg);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, .3);
+}
+
+.svc-empresas__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 18px;
-  text-align: center;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.svc__addon-media {
+.svc-empresas__media {
   position: relative;
   width: 100%;
-  max-width: 280px;
+  max-width: 260px;
   flex-shrink: 0;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
-.svc__addon-photo {
+.svc-empresas__photo {
   width: 100%;
-  height: 190px;
+  height: 170px;
   object-fit: cover;
   border: 4px solid var(--yellow);
   border-radius: 14px;
@@ -1686,40 +1698,40 @@ img { max-width: 100%; display: block; }
   transition: opacity 1.6s ease, transform 1.6s ease;
 }
 
-.svc__addon.is-visible .svc__addon-photo { opacity: 1; transform: scale(1); }
+.svc-empresas__inner.is-visible .svc-empresas__photo { opacity: 1; transform: scale(1); }
 
-.svc__addon-photo--round {
+.svc-empresas__photo--round {
   position: absolute;
   right: -16px;
-  bottom: -24px;
-  width: 100px;
-  height: 100px;
+  bottom: -22px;
+  width: 92px;
+  height: 92px;
   border-radius: 50%;
   border: 4px solid var(--white);
   box-shadow: 4px 4px 0 rgba(0, 0, 0, .3);
   transition-delay: .35s;
 }
 
-.svc__addon-title {
+.svc-empresas__title {
   font-family: var(--font-display);
   text-transform: uppercase;
   color: var(--white);
-  font-size: 20px;
+  font-size: 19px;
   margin: 0 0 8px;
 }
 
-.svc__addon-copy {
+.svc-empresas__copy {
   color: var(--white);
   font-weight: 600;
   font-size: 14px;
   line-height: 1.5;
-  max-width: 560px;
+  max-width: 520px;
   margin: 0 0 18px;
 }
 
-.svc__addon-copy strong { color: var(--yellow); }
+.svc-empresas__copy strong { color: var(--yellow); }
 
-.svc__addon-cta {
+.svc-empresas__cta {
   display: inline-flex;
   text-decoration: none;
   font-weight: 800;
@@ -1738,17 +1750,18 @@ img { max-width: 100%; display: block; }
 }
 
 @media (min-width: 860px) {
-  .svc__addon {
+  .svc-empresas { padding: 40px 48px; }
+
+  .svc-empresas__inner {
     flex-direction: row;
     text-align: left;
-    padding: 36px 48px;
     gap: 28px;
   }
 
-  .svc__addon-text { flex: 1; }
-  .svc__addon-copy { margin-bottom: 0; }
-  .svc__addon-cta { margin-top: 14px; }
-  .svc__addon-media { margin-bottom: 0; }
+  .svc-empresas__text { flex: 1; }
+  .svc-empresas__copy { margin-bottom: 0; }
+  .svc-empresas__cta { margin-top: 14px; }
+  .svc-empresas__media { margin-bottom: 0; }
 }
 
 .svc__price {
