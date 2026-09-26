@@ -1281,6 +1281,7 @@ img { max-width: 100%; display: block; }
 
 .svc-header {
   position: relative;
+  overflow: hidden;
   background: var(--navy);
   text-align: center;
   padding-bottom: 32px;
@@ -1289,6 +1290,13 @@ img { max-width: 100%; display: block; }
 .svc-header__cover {
   width: 100%;
   display: block;
+  animation: cover-in 2.4s cubic-bezier(.2, .7, .2, 1) both;
+}
+
+@keyframes cover-in {
+  0%   { opacity: 0; transform: scale(1.12); filter: blur(8px); }
+  60%  { opacity: 1; filter: blur(0); }
+  100% { opacity: 1; transform: scale(1); filter: blur(0); }
 }
 
 .svc-jump {
@@ -1662,6 +1670,7 @@ img { max-width: 100%; display: block; }
   font-weight: 800;
   font-size: 11px;
   letter-spacing: .06em;
+  text-transform: uppercase;
   padding: 6px 14px;
   border-radius: 6px;
   margin-bottom: 18px;
