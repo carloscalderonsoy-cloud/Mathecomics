@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/mathecomics/public_html/pagina_prueba
+    - export DEPLOYPATH=/home/mathecomics/public_html/pagina_prueba/
+    - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -R * $DEPLOYPATH
