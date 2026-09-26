@@ -1,0 +1,19 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to cPanel
+        uses: pinkasey/cpanel-deploy-action@v1.0.0
+        with:
+          hostname: 'https://mathecomics.com:2083'
+          repository_root: '/home/mathecomics/repositories/Mathecomics'
+          branch: 'main'
+          cpanel_token: ${{ secrets.CPANEL_TOKEN }}
+          cpanel_username: 'mathecomics'
