@@ -1290,12 +1290,11 @@ img { max-width: 100%; display: block; }
 .svc-header__cover {
   width: 100%;
   display: block;
-  animation: cover-in 2.4s cubic-bezier(.2, .7, .2, 1) both;
+  animation: cover-in 3.8s ease-in-out both;
 }
 
 @keyframes cover-in {
   0%   { opacity: 0; transform: scale(1.12); filter: blur(8px); }
-  60%  { opacity: 1; filter: blur(0); }
   100% { opacity: 1; transform: scale(1); filter: blur(0); }
 }
 
