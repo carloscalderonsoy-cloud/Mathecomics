@@ -12,7 +12,7 @@ jobs:
       - name: Deploy to cPanel
         uses: pinkasey/cpanel-deploy-action@v1.0.0
         with:
-          hostname: 'https://mathecomics.com:2083'
+          hostname: 'https://server.mathe-comics.com:2083'
           repository_root: '/home/mathecomics/repositories/Mathecomics'
           branch: 'main'
           cpanel_token: ${{ secrets.CPANEL_TOKEN }}
