@@ -9,12 +9,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: 1. Actualizar repositorio desde GitHub (Pull)
+      - name: 1. Actualizar repositorio (Pull)
         run: |
-          curl -s -H "cPanel-Token: cpanel ${{ secrets.CPANEL_TOKEN }}" \
+          curl --fail -s -H "cPanel-Token: cpanel ${{ secrets.CPANEL_TOKEN }}" \
             "https://server.mathe-comics.com:2083/execute/VersionControl/update?repository_root=/home/mathecomics/repositories/Mathecomics&branch=main"
 
-      - name: 2. Copiar archivos a carpeta web (Deploy .cpanel.yml)
+      - name: 2. Ejecutar despliegue (.cpanel.yml)
         run: |
-          curl -s -H "cPanel-Token: cpanel ${{ secrets.CPANEL_TOKEN }}" \
+          curl --fail -s -H "cPanel-Token: cpanel ${{ secrets.CPANEL_TOKEN }}" \
             "https://server.mathe-comics.com:2083/execute/VersionControlDeployment/create?repository_root=/home/mathecomics/repositories/Mathecomics"
