@@ -9,9 +9,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Probar conexión con cPanel
+      - name: 1. Actualizar repositorio (Pull)
         run: |
-          RESPONSE=$(curl -s -k -H "cPanel-Token: cpanel ${{ secrets.CPANEL_TOKEN }}" \
-            "https://server.mathe-comics.com:2083/execute/VersionControlDeployment/create?repository_root=/home/mathecomics/repositories/Mathecomics")
-          echo "Respuesta de cPanel:"
-          echo "$RESPONSE"
+          curl -s -k -H "Authorization: cpanel mathecomics:${{ secrets.CPANEL_TOKEN }}" \
+            "https://server.mathe-comics.com:2083/execute/VersionControl/update?repository_root=/home/mathecomics/repositories/Mathecomics&branch=main"
+
+      - name: 2. Ejecutar despliegue (.cpanel.yml)
+        run: |
+          curl -s -k -H "Authorization: cpanel mathecomics:${{ secrets.CPANEL_TOKEN }}" \
+            "https://server.mathe-comics.com:2083/execute/VersionControlDeployment/create?repository_root=/home/mathecomics/repositories/Mathecomics"
