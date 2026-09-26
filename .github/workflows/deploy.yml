@@ -9,11 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to cPanel
-        uses: pinkasey/cpanel-deploy-action@v1.0.0
-        with:
-          hostname: 'https://server.mathe-comics.com:2083'
-          repository_root: '/home/mathecomics/repositories/Mathecomics'
-          branch: 'main'
-          cpanel_token: ${{ secrets.CPANEL_TOKEN }}
-          cpanel_username: 'mathecomics'
+      - name: Trigger cPanel Git Deploy
+        run: |
+          curl -H "cPanel-Token: cpanel ${{ secrets.CPANEL_TOKEN }}" \
+            "https://server.mathe-comics.com:2083/execute/VersionControl/update?repository_root=/home/mathecomics/repositories/Mathecomics&branch=main"
