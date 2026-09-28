@@ -1444,9 +1444,16 @@ img { max-width: 100%; display: block; }
 .svc__inner {
   max-width: 1100px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+
+/* Orden en móvil: título+descripción, fotos+beneficios, resto de detalles. */
+.svc__head {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  align-items: flex-start;
 }
 
 .svc__media {
@@ -1909,14 +1916,23 @@ img { max-width: 100%; display: block; }
   .svc { padding: 72px 32px; }
 
   .svc__inner {
-    flex-direction: row;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
     gap: 56px;
+    grid-template-areas:
+      "media head"
+      "media text";
   }
 
-  .svc--reverse .svc__inner { flex-direction: row-reverse; }
+  .svc--reverse .svc__inner {
+    grid-template-areas:
+      "head media"
+      "text media";
+  }
 
-  .svc__media, .svc__text { flex: 1; }
+  .svc__head  { grid-area: head; }
+  .svc__media { grid-area: media; }
+  .svc__text  { grid-area: text; }
 
   .svc__photos { flex-direction: row; }
   .svc__photo { flex: 1 1 0; min-width: 0; height: 260px; }
