@@ -740,6 +740,33 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
 }
 
+/* Cada tarjeta usa el mismo color que su sección en servicios.html */
+.services__card--red {
+  background: var(--red);
+  border-color: var(--white);
+  box-shadow: 6px 6px 0 var(--navy);
+}
+.services__card--red .services__card-title,
+.services__card--red .services__card-copy { color: var(--white); }
+
+.services__card--navy {
+  background: var(--navy);
+  border-color: var(--white);
+  box-shadow: 6px 6px 0 var(--sky);
+}
+.services__card--navy .services__card-title,
+.services__card--navy .services__card-copy { color: var(--white); }
+
+.services__card--sky {
+  background: var(--sky);
+  box-shadow: 6px 6px 0 var(--navy);
+}
+
+.services__card--yellow {
+  background: var(--yellow);
+  box-shadow: 6px 6px 0 var(--red);
+}
+
 .services__card-pill {
   display: inline-block;
   align-self: flex-start;
@@ -784,12 +811,25 @@ img { max-width: 100%; display: block; }
 
 @media (min-width: 640px) {
   .services__grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* La 5ª tarjeta queda sola en su fila: se centra a lo ancho de las 2 columnas. */
+  .services__card:nth-child(5) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 12px);
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 860px) {
   .services__heading { font-size: 44px; }
   .services__subtitle { font-size: 17px; }
-  .services__grid { grid-template-columns: repeat(3, 1fr); }
+
+  /* Grid de 6 columnas virtuales: cada tarjeta normal ocupa 2, así las 2
+     tarjetas de la segunda fila se pueden centrar entre las de arriba. */
+  .services__grid { grid-template-columns: repeat(6, 1fr); }
+  .services__card { grid-column: span 2; }
+  .services__card:nth-child(4) { grid-column: 2 / 4; }
+  .services__card:nth-child(5) { grid-column: 4 / 6; max-width: none; margin: 0; }
 }
 
 /* ---------- Programa Start Smart ---------- */
