@@ -285,32 +285,11 @@ img { max-width: 100%; display: block; }
   gap: 10px;
 }
 
-.hero__logo {
-  width: 34px;
-  height: 34px;
-  background: var(--red);
-  border: 2px solid var(--white);
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.hero__brand-logo {
+  height: 42px;
+  width: auto;
   flex-shrink: 0;
-}
-
-.hero__logo span {
-  color: var(--white);
-  font-family: var(--font-display);
-  font-size: 9px;
-  letter-spacing: .02em;
-}
-
-.hero__brand-tag {
-  display: none;
-  color: var(--white);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .12em;
-  opacity: .85;
+  filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, .35));
 }
 
 .hero__topbar .btn {
@@ -467,14 +446,7 @@ img { max-width: 100%; display: block; }
     padding: 0 40px;
   }
 
-  .hero__logo {
-    width: 46px;
-    height: 46px;
-  }
-
-  .hero__logo span { font-size: 13px; }
-
-  .hero__brand-tag { display: inline; }
+  .hero__brand-logo { height: 58px; }
 
   .hero__topbar .btn {
     font-size: 14px;
@@ -619,10 +591,15 @@ img { max-width: 100%; display: block; }
   width: 100%;
   height: 180px;
   object-fit: cover;
+  object-position: center 18%;
   border: 3px solid var(--navy);
   border-radius: 10px;
   margin-bottom: 16px;
 }
+
+.method__step:nth-child(1) .method__photo { object-position: 38% 30%; }
+.method__step:nth-child(2) .method__photo { object-position: 55% 20%; }
+.method__step:nth-child(3) .method__photo { object-position: 42% 28%; }
 
 .method__number {
   position: absolute;
@@ -658,8 +635,8 @@ img { max-width: 100%; display: block; }
 }
 
 .method__cta-wrap {
-  text-align: center;
-  margin-top: 40px;
+  max-width: 420px;
+  margin: 40px auto 0;
 }
 
 .method__cta {
@@ -1084,8 +1061,13 @@ img { max-width: 100%; display: block; }
   text-shadow: -2px -2px 0 var(--navy), 2px -2px 0 var(--navy), -2px 2px 0 var(--navy), 2px 2px 0 var(--navy);
 }
 
-.closer__cta {
+.closer__cta-wrap {
   position: relative;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.closer__cta {
   font-size: 16px;
   padding: 15px 30px;
   border-radius: 12px;
