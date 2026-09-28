@@ -99,11 +99,10 @@
   }
 }
 
-/* Orden visual: texto, luego ícono, luego flecha — para que la flecha
-   quede al final y tenga sentido como llamado a la acción. */
+/* Orden visual: texto, luego flecha, luego ícono. */
 .cta-wa__label { order: 1; }
-.cta-wa__icon  { order: 2; }
-.cta-wa__arrow { order: 3; }
+.cta-wa__arrow { order: 2; }
+.cta-wa__icon  { order: 3; }
 
 .cta-wa__icon {
   position: relative;
