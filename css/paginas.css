@@ -250,6 +250,9 @@ img { height: auto; }
   border-top: 2px dashed rgba(11, 31, 59, .2);
 }
 
+/* Sin precio: el botón ocupa todo el ancho de la tarjeta. */
+.prod-card__foot .prod-card__btn { flex: 1 1 auto; justify-content: center; padding: 12px 16px; font-size: 14px; }
+
 .prod-card__price {
   display: flex;
   flex-direction: column;
